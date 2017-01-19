@@ -38,20 +38,20 @@ int main()
         scanf("%c",&ch);
         switch(ch)
         {
-            case 'U':   if(i!=0)
-                        {
-		            	    a[i][j]=a[i-1][j];
+            		case 'U':   if(i!=0)
+                       		    {
+		            		a[i][j]=a[i-1][j];
 			                i = i-1;
 			                a[i][j]=' ';
-                        }
-		            	break;
+                         	    }
+		            	    break;
 			case 'D':   if(i!=3)
 			            {
 			                a[i][j]=a[i+1][j];
 			                i = i+1;
 			                a[i][j]=' ';
-		            	}
-		            	break;
+		            	    }
+		            	    break;
 			case 'L':  if(j!=0)
 			           {
 			               a[i][j]=a[i][j-1];
@@ -72,7 +72,7 @@ int main()
 		for(k=0;k<4;k++)
 		{
 		    printf("\n---------------\n");
-            printf("|");
+           	    printf("|");
 		    for(l=0;l<4;l++)
 		    {
 		      if(a[k][l]== ' ')
