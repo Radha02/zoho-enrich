@@ -38,43 +38,43 @@ int main()
         scanf("%c",&ch);
         switch(ch)
         {
-            		case 'U':   if(i!=0)
-                       		    {
-		            		a[i][j]=a[i-1][j];
-			                i = i-1;
-			                a[i][j]=' ';
-                         	    }
-		            	    break;
-			case 'D':   if(i!=3)
-			            {
-			                a[i][j]=a[i+1][j];
-			                i = i+1;
-			                a[i][j]=' ';
-		            	    }
-		            	    break;
-			case 'L':  if(j!=0)
-			           {
-			               a[i][j]=a[i][j-1];
-			               j= j-1;
-			               a[i][j]=' ';
-			           }
-			           break;
-			case 'R':   if(j!=3)
-			            {
-			                a[i][j]=a[i][j+1];
-			                j= j+1;
-			                a[i][j]=' ';
-			            }
-			            break;
-			case 'Q':
-			            break;			
-		}
-		for(k=0;k<4;k++)
+            case 'U':   if(i!=0)
+                        {
+		            a[i][j]=a[i-1][j];
+			    i = i-1;
+			    a[i][j]=' ';
+                        }
+		        break;
+	    case 'D':   if(i!=3)
+			{
+			    a[i][j]=a[i+1][j];
+			    i = i+1;
+			    a[i][j]=' ';
+		        }
+		        break;
+	    case 'L':  if(j!=0)
+	    		{		
+			    a[i][j]=a[i][j-1];
+			    j= j-1;
+			    a[i][j]=' ';
+			}
+			break;
+	   case 'R':   if(j!=3)
+			{
+			    a[i][j]=a[i][j+1];
+			    j= j+1;
+			    a[i][j]=' ';
+			}
+		        break;
+	  case 'Q':
+			break;			
+	}
+	for(k=0;k<4;k++)
+	{	
+		printf("\n---------------\n");
+           	printf("|");
+		for(l=0;l<4;l++)
 		{
-		    printf("\n---------------\n");
-           	    printf("|");
-		    for(l=0;l<4;l++)
-		    {
 		      if(a[k][l]== ' ')
 		      {
 		          printf("%c",a[k][l]);
@@ -84,8 +84,8 @@ int main()
 		          printf("%d",a[k][l]);
 		      }
 		      printf("|");
-		    }
-		}
-		printf("\n---------------\n");
+		}  
+	}
+	printf("\n---------------\n");
     }
 }
